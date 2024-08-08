@@ -1,7 +1,7 @@
-function App() {
+import { Home } from "./pages/home/Home"
 
-  return <div className='App'>Hello World</div>
-  
+function App() {
+  return <Home /> 
 }
 
 export default App
