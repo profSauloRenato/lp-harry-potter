@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 export function useFetch() {
   const [data, setData] = useState<unknown[]>([]);
   const [page, setPage] = useState<number>(1);
-  // const [totalPage, setTotalPage] = useState<number>(0);
   const [loading, setLoading] = useState(true);
   const itemsPerPage = 8;
 
@@ -16,9 +15,6 @@ export function useFetch() {
       }
     )
     .then(async (response) => {
-      // setTotalPage(
-      //   Number(response.headers.get("X-Total-Count")) / itemsPerPage
-      // );
       const json = await response.json();
       setData([...data, ...json]);
     })
@@ -30,7 +26,6 @@ function handleScroll() {
   if (
     window.innerHeight + document.documentElement.scrollTop <
       document.documentElement.offsetHeight ||
-    // page === totalPage ||
     loading
   ) {
     return;
