@@ -4,12 +4,11 @@ export function useFetch() {
   const [data, setData] = useState<unknown[]>([]);
   const [page, setPage] = useState<number>(1);
   const [loading, setLoading] = useState(true);
-  const itemsPerPage = 8;
 
   function loadData() {
     setLoading(true);
     fetch(
-      `https://hp-api.onrender.com/api/characters?_page=${page}&_limit=${itemsPerPage}`,
+      `https://hp-api.onrender.com/api/characters`,
       {
         method: "GET",
       }

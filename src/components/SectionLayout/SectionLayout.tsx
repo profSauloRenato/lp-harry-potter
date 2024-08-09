@@ -1,7 +1,4 @@
-import { ReactNode, 
-  useState, 
-  useEffect 
-} from "react";
+import { ReactNode, useState, useEffect } from "react";
 import { Loader } from "../Loader/Loader.tsx";
 import { FaArrowUp } from "react-icons/fa";
 import "./styles.scss";
@@ -15,7 +12,6 @@ interface ISectionLayoutProps {
 
 export function SectionLayout({
   children,
-  // hasData,
   fetchingMoreData,
   initialLoading,
 }: ISectionLayoutProps) {
