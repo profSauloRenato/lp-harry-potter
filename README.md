@@ -1,4 +1,17 @@
-# React + TypeScript + Vite
+# LP Harry Potter
+
+## Para rodar o projeto
+No diretório do repositório, use o comando 'npm run dev'
+
+## Link da Hospedagem:
+https://lp-harry-potter-2f6zc6174-profsaulorenatos-projects.vercel.app/
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
